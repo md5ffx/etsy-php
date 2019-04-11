@@ -8,7 +8,7 @@ class EtsyClient
 {
 	private $base_url = "https://openapi.etsy.com/v2";
 	private $base_path = "/private";
-	private $oauth = null;
+	public $oauth = null;
 	private $authorized = false;
 	private $debug = true;
 
@@ -76,7 +76,6 @@ class EtsyClient
 	    {
 	    	$url .= '?scope=' . urlencode($extra['scope']);
 	    }
-
 	    if (isset($extra['callback']) && !empty($extra['callback']))
 	    {
 	    	$callback = $extra['callback'];

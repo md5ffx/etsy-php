@@ -66,6 +66,7 @@ class RequestValidator
 		$methodsParams = $methodInfo['params'];
 		foreach ($args as $name => $arg)
 		{
+
 			if (isset($methodsParams[$name]))
 			{
 				$validType = $methodsParams[$name];
