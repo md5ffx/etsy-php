@@ -8,7 +8,7 @@ class EtsyClient
 {
 	private $base_url = "https://openapi.etsy.com/v2";
 	private $base_path = "/private";
-	private $oauth = null;
+	public $oauth = null;
 	private $authorized = false;
 	private $debug = true;
 
