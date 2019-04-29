@@ -387,7 +387,7 @@
       "title": "string",
       "description": "text",
       "price": "float",
-      "materials": "array(string)",
+      "materials": "string",
       "shipping_template_id": "int",
       "shop_section_id": "int",
       "image_ids": "array(int)",
